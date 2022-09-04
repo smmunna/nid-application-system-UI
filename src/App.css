@@ -1,38 +1,542 @@
-.App {
-  text-align: center;
+/* For Navigation Menu */
+
+.logo {
+  height: 85px;
+  width: 85px;
+  background-color: white;
+  padding: 10px;
+  margin-top: -20px;
+  border-radius: 0 0 50% 50%;
+  position: absolute;
+  margin-left: 10rem;
+  box-shadow: 0px 4px 4px rgb(7 24 51 / 41%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.collapse ul {
+  margin-left: 20%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navheading {
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Body.js styling here.. */
+.banner {
+  background-image: linear-gradient(
+      90deg,
+      #162844 15.21%,
+      rgba(22, 40, 68, 0) 63.31%
+    ),
+    url("./MainComponents/images/ec -image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  overflow: hidden;
+}
+.banner-title {
+  margin-top: 9%;
+}
+.banner-title h2 {
+  font-size: 80px;
+  color: white;
+}
+.banner-title h4 {
+  font-size: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Body.js column Design */
+.column1 {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(238, 245, 255, 0.2);
+  padding: 20px;
+}
+.column2 {
+  margin-left: 5rem;
+  margin-top: 5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: rgba(238, 245, 255, 0.4);
+  padding: 20px;
+}
+.column1-heading {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px;
+  color: white;
+}
+.column1-body {
+  font-size: 20px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 8%;
+}
+.column2-body {
+  font-size: 20px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 15%;
+}
+.column1-footer .mylink{
+    text-decoration: none;
+    color: black;
+}
+.column1-footer {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px;
+  color: black;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Loginsection.js file CSS */
+.loginsection {
+  height: 600px;
+}
+.login-form {
+  margin: 80px 0 0 50px;
+  padding: 40px;
+}
+.login-form p {
+  font-size: 20px;
+}
+.login-form input {
+  width: 90%;
+  padding: 13px;
+  border: 1px solid rgb(232, 196, 150);
+  border-radius: 10px;
+  background-color: rgb(250, 235, 215);
+}
+
+.forgotpass {
+  padding-left: 5%;
+  font-size: 20px;
+}
+.login-btn {
+  background-color: #032559;
+  color: white;
+  font-size: 22px;
+  padding: 10px;
+  width: 30%;
+  border-radius: 10px;
+}
+
+/* Right side column for Loginsection.js file */
+.questions {
+  margin: 20%;
+}
+.ques1 {
+  position: relative;
+  border: 1px solid rgb(80, 79, 79);
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: rgb(248, 249, 250);
+}
+.ques1 p {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 19px;
+}
+.arrow {
+  position: absolute;
+  /* margin: -13.8% 90% ; */
+  margin-left: 90%;
+  margin-top: -11%;
+}
+.linkstyle {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.linkstyle:hover {
+  color: black;
+}
+
+/* NidPortalsection.js file CSS */
+.nidportal-section {
+  height: 250px;
+  background-color: #e7eef9;
+}
+.nid-portal-details {
+  padding: 50px;
+}
+.nid-portal-details h2 {
+  text-align: center;
+  color: #03257d;
+}
+.nid-portal-details p {
+  margin-top: 2%;
+  text-align: center;
+  font-size: 20px;
+  color: #4c4f52;
+}
+
+/* Footer.js File */
+.footer {
+  height: 300px;
+  background-color: #032559;
+}
+.eclogo {
+  position: relative;
+}
+.eclogo img {
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  transform: translate(140%, 140%);
+}
+.eclogo p {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  transform: translate(80%, 500%);
+}
+
+.contact-info {
+  margin-top: 120px;
+  margin-left: 32%;
+}
+.contact-info p {
+  color: white;
+  font-size: 18px;
+}
+
+/* Responsive Designing tools */
+@media (max-width: 1399.98px) {
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .column1-footer {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+  .column2-body {
+    margin-bottom: 20px;
+  }
+
+  /* Questions part */
+  .arrow {
+    margin-top: -15.3%;
   }
 }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+ 
+    .collapse ul {
+    margin-left: 45%;
+  }
+ 
+    .column1,
+  .column2 {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .banner {
+    height: 1000px;
+  }
+  .column1-footer {
+    width: 20%;
+  }
+  .column1-body {
+    margin-bottom: 15px;
+  }
+  .column2-body {
+    margin-bottom: 15px;
+  }
+
+  /* LoginSection.js file; */
+  .loginsection {
+    height: 1100px;
+  }
+
+  /* Nid Portaal  */
+  .nidportal-section {
+    height: 300px;
+  }
+  .questions {
+    margin-top: 5%;
+  }
+  .arrow {
+    margin-top: -10%;
+  }
+
+  /* Foooter */
+  .eclogo {
+  }
+  .eclogo img {
+    height: 75px;
+    width: 75px;
+
+    transform: translate(20%, 50%);
+  }
+  .eclogo p {
+    transform: translate(40%, 220%);
+    font-size: 18px;
+  }
+
+  .contact-info {
+    margin-top: 150px;
+    margin-left: 3%;
+  }
+  .contact-info p {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .logo {
+    margin-left: 1rem;
+    margin-top: -2%;
+  }
+
+  .collapse ul {
+    margin-left: 45%;
+  }
+  .navheading {
+    display: block;
+    margin-left: 7.6rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  /* 
+            Body.js File with CSS
+        */
+
+  .banner-title {
+    margin-top: 14%;
+    margin-left: 25px;
+  }
+  .banner-title h2 {
+    font-size: 50px;
+    color: #f3f5f8;
+  }
+  .banner-title h4 {
+    font-size: 25px;
+  }
+  .banner {
+    height: 1000px;
+  }
+
+  /* Columns styling for phone */
+  .column1 {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .column2 {
+    margin-left: 35px;
+    margin-right: 25px;
+  }
+  .column1-footer {
+    width: 50%;
+  }
+
+  /* LoginSection.js file; */
+  .login-form {
+    margin: 10px 0 10px 25px;
+    padding: 20px;
+  }
+
+  /* LoginSection.js file; */
+  .loginsection {
+    height: 900px;
+  }
+
+  /* Nid Portaal  */
+  .nidportal-section {
+    height: 400px;
+  }
+  .nid-portal-details p {
+    text-align: left;
+  }
+
+  /* Foooter */
+  .eclogo {
+  }
+  .eclogo img {
+    height: 75px;
+    width: 75px;
+
+    transform: translate(20%, 50%);
+  }
+  .eclogo p {
+    transform: translate(40%, 220%);
+    font-size: 18px;
+  }
+
+  .contact-info {
+    margin-top: 150px;
+    margin-left: 3%;
+  }
+  .contact-info p {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* Login section work will nearr */
+  .forgotpass {
+    margin-left: 7%;
+  }
+
+  .logo {
+    margin-left: 1rem;
+    margin-top: -4%;
+  }
+
+  .collapse ul {
+    margin-left: 45%;
+  }
+  .navheading {
+    display: block;
+    margin-left: 7.6rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  /* 
+            Body.js File with CSS
+        */
+
+  .banner-title {
+    margin-top: 24%;
+  }
+  .banner-title h2 {
+    font-size: 50px;
+    color: #f3f5f8;
+  }
+  .banner-title h4 {
+    font-size: 25px;
+  }
+  .banner {
+    height: 1000px;
+  }
+
+  /* Columns styling for phone */
+  .column1 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .column2 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .column1-footer {
+    width: 50%;
+  }
+
+  /* LoginSection.js file; */
+  .loginsection {
+    height: 900px;
+  }
+  .login-form {
+    margin: 10px 0 10px 5px;
+    padding: 20px;
+  }
+  .login-btn {
+    width: 40%;
+  }
+  .forgotpass {
+    padding-left: 1px;
+  }
+  /* Questions Part */
+  .questions {
+    margin: 5%;
+  }
+  .arrow {
+    margin-top: -13%;
+  }
+  /* Nid Portaal  */
+  .nidportal-section {
+    height: 500px;
+  }
+  .nid-portal-details p {
+    text-align: left;
+  }
+
+  /* Foooter */
+  .eclogo {
+  }
+  .eclogo img {
+    height: 75px;
+    width: 75px;
+
+    transform: translate(20%, 50%);
+  }
+  .eclogo p {
+    transform: translate(40%, 220%);
+    font-size: 18px;
+  }
+
+  .contact-info {
+    margin-top: 150px;
+    margin-left: 3%;
+  }
+  .contact-info p {
+    color: white;
+    font-size: 18px;
+  }
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
+
+
+
+
+/* Dropdown */
+
+/* Style The Dropdown Button */
+.dropbtn {
+    /* background-color: #4CAF50; */
+    
+    padding: 1px;
+    font-size: 6px;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 20%;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+   
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
